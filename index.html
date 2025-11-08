@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Movies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <body class="bg-slate-800 text-white">
+  <!-- Header -->
+  <header class="bg-slate-900 p-4 text-center">
+    <h1 class="text-3xl font-bold">🎬 MovieFinder</h1>
+    <p class="text-lg text-gray-300">Find Your Favourite Movie Reviews</p>
+  </header>
+
+<section class="flex justify-center items-center mt-8 px-4">
+  <div class="flex w-full max-w-xl bg-slate-700 rounded-full shadow-lg overflow-hidden">
+    <input 
+      type="text" 
+      placeholder="🔍 Search your movie..." 
+      class="w-full bg-transparent text-white placeholder-gray-400 px-4 py-3 focus:outline-none"
+      id="input"
+    >
+    <button id="search"
+      class="bg-blue-600 text-white px-6 py-3 font-semibold hover:bg-blue-700 transition-colors duration-200"
+    >
+      Search
+    </button>
+  </div>
+  
+</section>
+
+<section class="p-8 bg-slate-800 min-h-screen">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="movie-card">
+    
+    <!-- Movie Card -->
+    
+
+  </div>
+</section>
+
+<footer class="border-t border-slate-700 bg-slate-900 py-4 text-center text-gray-400 text-sm">
+  Built by <span class="text-white font-semibold">Krishan Kant Mishra</span> | Powered by OMDB API
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
